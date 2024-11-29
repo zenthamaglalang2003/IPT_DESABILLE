@@ -1,0 +1,175 @@
+/* General Styles */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Arial', Serif;
+   line-height: 1.6;
+   background-color: #f4f4f4;
+   background-image: url("water.jpg");
+   height: 100%; 
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+header {
+   background-color: #333;
+   padding: 30px;
+   text-align: center;
+}
+
+nav ul {
+   list-style: none;
+   padding: 0;
+   
+}
+
+nav ul li {
+   display: inline;
+   margin: 0 15px;
+}
+
+nav ul li a {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+nav ul li a:hover {
+   color: #007BFF;
+}
+
+section {
+   padding: 30px 20px;
+   text-align: center;
+}
+
+h2 {
+   font-size: 2.5rem;
+   margin-bottom: 20px;
+   color: #333;
+}
+
+/* Home Section */
+.home {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #007BFF;
+   color: white;
+   padding: 100px 50px;
+}
+
+.intro h1 {
+   font-size: 3rem;
+   margin-bottom: 20px;
+}
+
+.intro span {
+   color: #FFD700;
+}
+
+.profile-img {
+   width: 300px;
+   border-radius: 50%;
+}
+.button-lrn, .button-hire {
+   padding: 10px 20px;
+   margin: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.button-lrn {
+   background-color: yellow;
+   color: lightyellow;
+}
+.button-lrn:hover, .button-hire:hover {
+   opacity: 0.8;
+}
+
+/* Projects Section */
+.projects .project-list {
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+   flex-wrap: wrap;
+   padding: 0px 50px;
+}
+
+.project-item {
+   width: 300px;
+   background-color: lightblue;
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(1, 1, 1, 0.1);
+}
+
+.project-item img {
+   width: 100%;
+   border-radius: 15px;
+}
+
+/* Services Section */
+.services .service-list {
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+   flex-wrap: wrap;
+   padding: 0px 50px;
+}
+
+.service-item {
+   width: 300px;
+   background-color: lightblue;
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(1, 1, 1, 0.1);
+}
+.service-item img {
+   width: 100%;
+   border-radius: 15px;
+}
+
+/* Contact Section */
+.contact form {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.contact input, .contact textarea {
+   width: 300px;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.contact button {
+   padding: 10px 20px;
+   background-color: #007BFF;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.contact button:hover {
+   background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+   background-color: #333;
+   color: white;
+   text-align: center;
+   padding: 20px;
+   margin-top: 20px;
+}

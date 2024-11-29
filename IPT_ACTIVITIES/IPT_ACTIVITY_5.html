@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <h2>Square and Cube</h2>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="calculateSquareAndCube()">Calculate</button>
+    <p id="squareAndCubeResult"></p>
+
+    <h2>Calculator</h2>
+    <label for="num1">First number:</label>
+    <input type="number" id="num1" name="num1">
+    
+    <label for="num2">Second number:</label>
+    <input type="number" id="num2" name="num2">
+    
+    <label for="num3">Third number:</label>
+    <input type="number" id="num3" name="num3">
+    
+    <label for="num4">Fourth number:</label>
+    <input type="number" id="num4" name="num4">
+    
+    <label for="num5">Fifth number:</label>
+    <input type="number" id="num5" name="num5">
+    
+    <button onclick="calculateAverage()">Calculate Average</button>
+    <p id="averageResult"></p>
+
+    <script>
+        function calculateSquareAndCube() {
+            const number = parseFloat(document.getElementById("numberInput").value);
+            
+            // Check for invalid input
+            if (isNaN(number)) {
+                document.getElementById("squareAndCubeResult").textContent = "Please enter a valid number.";
+                return;
+            }
+
+            const square = number * number;
+            const cube = number * number * number;
+
+            // Use backticks for template literals
+            document.getElementById("squareAndCubeResult").textContent = 
+                `The square of ${number} is ${square}. The cube of ${number} is ${cube}.`;
+        }
+
+        function calculateAverage() {
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            const num3 = parseFloat(document.getElementById("num3").value);
+            const num4 = parseFloat(document.getElementById("num4").value);
+            const num5 = parseFloat(document.getElementById("num5").value);
+
+            // Check if any input is invalid
+            if ([num1, num2, num3, num4, num5].some(isNaN)) {
+                document.getElementById("averageResult").textContent = "Please enter valid numbers in all fields.";
+                return;
+            }
+
+            const average = (num1 + num2 + num3 + num4 + num5) / 5;
+
+            // Use backticks for template literals
+            document.getElementById("averageResult").textContent = 
+                `The average of the five numbers is: ${average}`;
+        }
+    </script>
+</body>
+</html>
